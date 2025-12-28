@@ -49,13 +49,11 @@ body {
     background-color: #3498db;
 }
 
-/* Hero Banner with Your Panoramic Background */
-.hero-banner {
-    background-image: url('images/banner.jpg');
+/* Section Banners */
+.section-banner {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 40vh;
+    height: 300px;
     position: relative;
     display: flex;
     align-items: center;
@@ -63,25 +61,26 @@ body {
     margin-top: 60px;
 }
 
-/* Dark overlay for text readability */
-.overlay {
+.research-banner {
+    background-image: url('images/banner.jpg');
+}
+
+.teaching-banner {
+    background-image: url('images/banner2.jpg');
+}
+
+.section-banner .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 30px;
+    padding: 30px 50px;
     border-radius: 10px;
     text-align: center;
+}
+
+.section-banner h1 {
+    font-size: 3rem;
     color: white;
-}
-
-.hero-banner h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    font-weight: bold;
-}
-
-.hero-banner p {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
 }
 
 /* Content Section */
