@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Garamond', 'EB Garamond', serif;
     line-height: 1.6;
     color: #333;
 }
@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 20px;
+    padding: 12px 20px;
 }
 
 .nav-link {
@@ -36,7 +36,7 @@ body {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -55,32 +55,32 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 40vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
+    margin-top: 60px;
 }
 
 /* Dark overlay for text readability */
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 60px 40px;
+    padding: 40px 30px;
     border-radius: 10px;
     text-align: center;
     color: white;
 }
 
 .hero-banner h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
 
 .hero-banner p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -137,7 +137,41 @@ body {
     text-decoration: underline;
 }
 
-/* About Section with Portrait */.about-container {    display: flex;    gap: 40px;    align-items: flex-start;    margin-top: 30px;}.portrait-container {    flex-shrink: 0;}.portrait-img {    width: 300px;    height: auto;    border-radius: 10px;    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}.about-text {    flex: 1;}/* Mobile responsive for about section */@media (max-width: 768px) {    .about-container {        flex-direction: column;        align-items: center;    }        .portrait-img {        width: 100%;        max-width: 300px;    }}
+/* About Section with Portrait */
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.portrait-container {
+    flex-shrink: 0;
+}
+
+.portrait-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Mobile responsive for about section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portrait-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 /* CV Link Box at top of Research */
 .cv-link-box {
@@ -300,7 +334,8 @@ footer {
     }
     
     .hero-banner {
-        height: 70vh;
+        height: 30vh;
+        margin-top: 55px;
     }
     
     .hero-banner h1 {
@@ -312,7 +347,7 @@ footer {
     }
     
     .overlay {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
     
     .content {
@@ -346,3 +381,4 @@ footer {
         gap: 10px;
     }
 }
+```
