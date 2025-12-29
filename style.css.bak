@@ -1,0 +1,291 @@
+<<<<<<< HEAD
+* {    margin: 0;    padding: 0;    box-sizing: border-box;}body {    font-family: 'Garamond', 'Times New Roman', serif;    line-height: 1.6;    color: #333;    background-color: #f9f9f9;}/* Navigation */.navbar {    background-color: #2c3e50;    padding: 15px 0;    position: fixed;    width: 100%;    top: 0;    z-index: 1000;    box-shadow: 0 2px 5px rgba(0,0,0,0.1);}.nav-container {    max-width: 1200px;    margin: 0 auto;    display: flex;    justify-content: center;    align-items: center;    gap: 20px;}.nav-link {    color: white;    text-decoration: none;    font-size: 1.1rem;    transition: color 0.3s;}.nav-link:hover {    color: #3498db;}.nav-link.active {    color: #3498db;    font-weight: bold;}.nav-separator {    color: white;    font-size: 1.1rem;}/* Section Banners */.section-banner {    background-size: cover;    background-position: center center;    background-repeat: no-repeat;    height: 400px;    position: relative;    display: flex;    align-items: center;    justify-content: center;    margin-top: 60px;}.research-banner {    background-image: url('images/banner.jpg');}.teaching-banner {    background-image: url('images/banner2.jpg');}.banner-overlay {    background-color: rgba(0, 0, 0, 0.5);    padding: 30px 60px;    border-radius: 10px;    text-align: center;}.banner-overlay h1 {    font-size: 3.5rem;    color: white;    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);    margin: 0;}/* Content Sections */.content {    max-width: 1200px;    margin: 40px auto;    padding: 40px;    background-color: white;    box-shadow: 0 0 10px rgba(0,0,0,0.1);}.section-bg {    background-color: #f4f4f4;}h2 {    font-size: 2.5rem;    margin-bottom: 30px;    color: #2c3e50;    border-bottom: 3px solid #3498db;    padding-bottom: 10px;}h3 {    font-size: 1.8rem;    margin-top: 30px;    margin-bottom: 20px;    color: #34495e;}/* About Section - Portrait and Text Side by Side */.about-container {    display: flex;    gap: 40px;    align-items: flex-start;    margin-top: 30px;}.portrait-container {    flex-shrink: 0;}.portrait-img {    width: 250px;    height: auto;    border-radius: 10px;    box-shadow: 0 4px 8px rgba(0,0,0,0.2);}.about-text {    flex: 1;}.about-text p {    margin-bottom: 20px;    text-align: justify;    font-size: 1.1rem;}/* CV Section */.cv-link-box {    background-color: #e8f4f8;    padding: 20px;    border-left: 4px solid #3498db;    margin-bottom: 30px;}.inline-cv-link {    color: #2980b9;    text-decoration: none;    font-weight: bold;}.inline-cv-link:hover {    text-decoration: underline;}.cv-embed-container {    width: 100%;    height: 800px;    margin: 30px 0;    border: 1px solid #ddd;}.cv-embed {    width: 100%;    height: 100%;    border: none;}.cv-download {    text-align: center;    margin-top: 20px;}.cv-button {    display: inline-block;    padding: 12px 30px;    background-color: #3498db;    color: white;    text-decoration: none;    border-radius: 5px;    font-size: 1.1rem;    transition: background-color 0.3s;}.cv-button:hover {    background-color: #2980b9;}/* Publications */.note {    font-style: italic;    color: #666;    margin-bottom: 20px;}.publication {    display: flex;    gap: 15px;    margin-bottom: 25px;    padding: 15px;    background-color: #f9f9f9;    border-left: 3px solid #3498db;}.pub-number {    font-weight: bold;    color: #2c3e50;    flex-shrink: 0;}.pub-content {    flex: 1;    line-height: 1.8;}.award {    color: #27ae60;    font-weight: bold;}/* Teaching */.teaching-entry {    margin-bottom: 25px;    padding: 15px;    background-color: #f9f9f9;    border-left: 3px solid #3498db;}.teaching-term {    font-weight: bold;    color: #2c3e50;    margin-bottom: 5px;}.teaching-course {    font-size: 1.1rem;    color: #34495e;}/* Footer */footer {    background-color: #2c3e50;    color: white;    text-align: center;    padding: 20px 0;    margin-top: 50px;}/* Responsive Design */@media (max-width: 768px) {    .about-container {        flex-direction: column;        align-items: center;    }        .portrait-img {        width: 200px;    }}/* portrait/contact tweaks */.portrait-container {  text-align: center;}.portrait-container .contact-row {  display: flex;  flex-wrap: wrap;  gap: 0.35rem 0.6rem;  justify-content: center;  margin-top: 0.5rem;  font-size: 0.95rem;}.portrait-container .contact-item {  display: inline-flex;  align-items: center;  gap: .4rem;  font-size: 0.9rem;  padding: .12rem .4rem;  border-radius: 5px;  background: rgba(0,0,0,0.03);  border: 1px solid rgba(0,0,0,0.06);}/* force any contact images / icons to a small icon size */.portrait-container .contact-item img,.portrait-container .contact-item .icon {  width: 16px !important;  height: auto !important;  display: inline-block;  vertical-align: middle;}
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #3498db;
+}
+
+.nav-link.active {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.nav-separator {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Section Banners */
+.section-banner {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.research-banner {
+    background-image: url('images/banner.jpg');
+}
+
+.teaching-banner {
+    background-image: url('images/banner2.jpg');
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-overlay h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+/* Content Sections */
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-bg {
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+/* About Section - Portrait and Text Side by Side */
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.portrait-img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/* CV Section */
+.cv-link-box {
+    background-color: #e8f4f8;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.inline-cv-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inline-cv-link:hover {
+    text-decoration: underline;
+}
+
+.cv-embed-container {
+    width: 100%;
+    height: 800px;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+}
+
+.cv-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #2980b9;
+}
+
+/* Publications */
+.note {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.publication {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #3498db;
+}
+
+.pub-number {
+    font-weight: bold;
+    color: #2c3e50;
+    flex-shrink: 0;
+}
+
+.pub-content {
+    flex: 1;
+    line-height: 1.8;
+}
+
+.award {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Teaching */
+.teaching-entry {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #3498db;
+}
+
+.teaching-term {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.teaching-course {
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portrait-img {
+        width: 200px;
+    }
+
+/* end responsive rules */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }.portrait-img {
+    width: 200px;
+  }
+}/* portrait/contact tweaks */
+.portrait-container { text-align: center; }.portrait-container .contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}.portrait-container .contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 0.9rem;
+  padding: .15rem .45rem;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.06);>>>>>>> f0671c98766ebdbf79b8ab5fba776f7eb53f004a
