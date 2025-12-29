@@ -265,3 +265,5 @@ footer {
     .portrait-img {
         width: 200px;
     }
+
+*/.portrait-container { text-align: center; }.portrait-container .contact-row {  display: flex;  flex-wrap: wrap;  gap: 0.35rem 0.6rem;  justify-content: center;  margin-top: 0.5rem;  font-size: 0.95rem; /* controls text size */}.portrait-container .contact-item {  display: inline-flex;  align-items: center;  gap: .4rem;  font-size: 0.9rem;            /* smaller text */  padding: .15rem .45rem;      /* reduce button padding */  border-radius: 5px;  background: rgba(0,0,0,0.03);  border: 1px solid rgba(0,0,0,0.06);}/* SVG / icon size */.portrait-container .contact-item .icon,.portrait-container .contact-item img {  width: 16px;                  /* change to 14px/18px if you prefer */  height: 16px;  display: inline-block;  vertical-align: middle;  stroke: currentColor;  fill: currentColor;          /* ensures colored SVG scales nicely */}
