@@ -11,7 +11,26 @@ body {
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* Restore some outer margins and internal padding */.container {  max-width: 1100px;  margin: 48px auto;    /* bring outer margins back */  padding: 24px;        /* a little more internal padding */}/* Slightly taller navbar spacing */.nav-container { padding: 12px 18px; }/* Content box spacing */.content { padding: 28px; margin-top: 22px; }/* About layout spacing */.about-container { gap: 36px; }          /* more space between portrait and text */.portrait-container { margin-top: 4px; }.portrait-img {  width: 340px;                           /* keep portrait large */  max-width: 36vw;  margin-right: 22px;                     /* explicit right gap for float-like spacing */}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+/* Restore some outer margins and internal padding */.container {  max-width: 1200px;  margin: 24px auto;    /* narrower outer margins */  padding: 20px;        /* a little more internal padding */}/* Slightly taller navbar spacing */.nav-container { padding: 12px 18px; }/* Content box spacing */.content { padding: 28px; margin-top: 22px; }/* About layout spacing */.about-container { gap: 36px; }          /* more space between portrait and text */.portrait-container { margin-top: 4px; }.portrait-img {  width: 340px;                           /* keep portrait large */  max-width: 36vw;  margin-right: 22px;                     /* explicit right gap for float-like spacing */}
 
 .nav-link {
   color: #fff;
@@ -117,7 +136,21 @@ body {
 }
 .inline-cv-link { color: #247ab7; font-weight: 600; text-decoration: none; }
 .inline-cv-link:hover { text-decoration: underline; }
-.cv-embed-container {  height: 760px;  padding: 12px;  margin-top: 18px;  border: 1px solid #e1e1e1;  border-radius: 6px;  background: #fff;}
+.cv-embed-container {
+  height: calc(100vh - 180px);
+  min-height: 600px;
+  padding: 0;
+  margin-top: 18px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background: #fff;
+}
+.cv-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+}
 
 /* Publications / teaching / cards */
 .publication, .teaching-entry {
@@ -160,9 +193,9 @@ h3 { margin: 12px 0 10px; }
   .content { padding: 14px; margin-top: 12px; }
   .about-container { flex-direction: column; align-items: center; gap: 18px; }
   .portrait-img { width: 260px; max-width: 70vw; }
-  .cv-embed-container { height: 520px; }
+  .cv-embed-container { height: calc(100vh - 200px); min-height: 400px; }
   .publication, .teaching-entry { flex-direction: column; }
   footer { padding: 12px 6px; }
 }
 
-/* Small screens: keep some margins so things don't touch edges */@media (max-width: 768px) {  .container { margin: 18px auto; padding: 16px; }  .content { padding: 18px; }  .portrait-img { width: 280px; max-width: 72vw; margin-right: 0; }  .cv-embed-container { height: 520px; padding: 10px; }}
+/* Small screens: keep some margins so things don't touch edges */@media (max-width: 768px) {  .container { margin: 18px auto; padding: 16px; }  .content { padding: 18px; }  .portrait-img { width: 280px; max-width: 72vw; margin-right: 0; }  .cv-embed-container { height: calc(100vh - 200px); min-height: 400px; }}
