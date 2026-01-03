@@ -62,6 +62,19 @@ body {
 .nav-link:hover { background: rgba(255,255,255,0.05); color: #eaf6ff; }
 .nav-link.active { color: #eaf6ff; font-weight: 600; }
 
+/* Page banner */
+.page-banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+.page-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /* Hero section */
 .hero {
   background: #2c3e50;
