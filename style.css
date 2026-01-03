@@ -157,8 +157,11 @@ body {
 }
 .portrait-container .contact-item img,
 .portrait-container .contact-item .icon {
-  width: 16px; height: auto; display:inline-block; vertical-align:middle;
-/* Stack contact icons/links vertically and style */.portrait-container .contact-row {  display: flex;  flex-direction: column;    /* stack vertically */  align-items: flex-start;  gap: 8px;  margin-top: 0.6rem;}.portrait-container .contact-item {  background: rgba(0,0,0,0.03);  border: 1px solid rgba(0,0,0,0.06);  color: #334;               /* neutral dark color for text/icons */  padding: 6px 10px;  border-radius: 6px;  font-size: 0.92rem;}.portrait-container .contact-item a,.portrait-container .contact-item a:visited {  color: inherit;            /* prevent default blue links */  text-decoration: none;  display: inline-flex;  align-items: center;  gap: 8px;}.portrait-container .contact-item a:hover {  background: rgba(52,152,219,0.06);  color: #247ab7;}}
+  width: 16px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* CV section */
 .cv-link-box {
