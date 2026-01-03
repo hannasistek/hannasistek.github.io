@@ -46,9 +46,8 @@ body {
 .about-container { gap: 40px; }
 .portrait-container { margin-top: 4px; }
 .portrait-img {
-  width: 320px;
-  max-width: 36vw;
-  margin-right: 22px;
+  width: 280px;
+  max-width: 100%;
 }
 
 .nav-link {
@@ -122,8 +121,8 @@ body {
   text-align: center;
 }
 .portrait-img {
-  width: 320px;       /* larger portrait */
-  max-width: 38vw;
+  width: 280px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
@@ -263,10 +262,17 @@ h3 { margin: 12px 0 10px; }
   .banner-overlay h1 { font-size: 1.6rem; padding: 12px 16px; }
   .content { padding: 20px; }
   .about-container { flex-direction: column; align-items: center; gap: 18px; }
-  .portrait-img { width: 260px; max-width: 70vw; }
+  .portrait-img { width: 220px; max-width: 80%; }
   .cv-embed-container { height: calc(100vh - 200px); min-height: 400px; }
   .publication, .teaching-entry { flex-direction: column; }
   footer { padding: 12px 6px; }
 }
 
-/* Small screens: keep some margins so things don't touch edges */@media (max-width: 768px) {  .container { margin: 18px auto; padding: 16px; }  .content { padding: 18px; }  .portrait-img { width: 280px; max-width: 72vw; margin-right: 0; }  .cv-embed-container { height: calc(100vh - 200px); min-height: 400px; }}
+/* Small screens: keep some margins so things don't touch edges */
+@media (max-width: 768px) {
+  .container { margin: 18px auto; padding: 16px; }
+  .content { padding: 18px; }
+  .portrait-img { width: 220px; max-width: 80%; margin-right: 0; }
+  .cv-embed-container { height: calc(100vh - 200px); min-height: 400px; }
+  .page-title { font-size: 1.8rem; }
+}
