@@ -299,7 +299,7 @@ h3 { margin: 12px 0 10px; }
   .content { padding: 20px; }
   .about-container { flex-direction: column; align-items: center; gap: 18px; }
   .portrait-img { width: 70vw; max-width: 320px; }
-  .cv-embed-container { display: none; }
+  .cv-embed-container { display: none !important; }
   .cv-download { margin-top: 20px; }
   .cv-button { padding: 18px 36px; font-size: 1.1rem; }
   .publication, .teaching-entry { flex-direction: column; }
@@ -311,6 +311,11 @@ h3 { margin: 12px 0 10px; }
   .container { margin: 18px auto; padding: 16px; }
   .content { padding: 18px; }
   .portrait-img { width: 70vw; max-width: 320px; margin-right: 0; }
-  .cv-embed-container { display: none; }
+  .cv-embed-container { display: none !important; }
   .page-title { font-size: 1.8rem; }
+}
+
+/* Hide CV embed on mobile/tablet */
+@media (max-width: 1024px) {
+  .cv-embed-container { display: none !important; }
 }
