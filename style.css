@@ -73,7 +73,7 @@ body {
   height: 300px;
   display: block;
   object-fit: cover;
-  object-position: center top;
+  object-position: center bottom;
 }
 
 /* Section subheadings (smaller) */
