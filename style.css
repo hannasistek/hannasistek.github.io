@@ -305,8 +305,8 @@ h3 { margin: 12px 0 10px; }
   .content { padding: 20px; }
   .about-container { flex-direction: column; align-items: center; gap: 18px; }
   .portrait-img { width: 70vw; max-width: 320px; }
-  .page-banner { max-height: 180px; }
-  .page-banner img { min-height: 180px; object-fit: cover; }
+  .page-banner { max-height: 200px; }
+  .page-banner img { height: 200px; object-fit: cover; object-position: center bottom; }
   .cv-embed-container { display: none !important; }
   .cv-download { margin-top: 20px; }
   .cv-button { padding: 18px 36px; font-size: 1.1rem; }
