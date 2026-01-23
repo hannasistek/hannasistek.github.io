@@ -295,6 +295,14 @@ h3 { margin: 12px 0 10px; }
   font-weight: 400;
 }
 
+/* Main section headings (Research, Teaching, Projects) */
+.content h1 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin: 0 0 18px;
+  font-weight: 500;
+}
+
 /* Utilities */
 .small { font-size: 0.92rem; color: #555; }
 .center { text-align:center; }
