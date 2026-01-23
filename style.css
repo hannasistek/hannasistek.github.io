@@ -53,7 +53,7 @@ body {
 .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   padding: 10px 18px;  /* wider clickable area */
   border-radius: 6px;
   transition: background-color 180ms ease, color 180ms ease;
@@ -241,6 +241,12 @@ body {
 .pub-number { font-weight: 700; color: #2c3e50; flex-shrink:0; }
 .pub-content { flex:1; line-height:1.6; }
 
+/* Card titles (projects / publications / teaching) */
+.publication h2, .teaching-entry h2 {
+  font-size: 0.95rem;
+  margin: 0 0 10px;
+}
+
 /* Footer */
 footer {
   background: #2c3e50;
@@ -299,7 +305,7 @@ h3 { margin: 12px 0 10px; }
   .hero h1 { font-size: 2rem; }
   .container { margin: 12px auto; padding: 16px; }
   .nav-container { gap: 12px; padding: 8px 10px; }
-  .nav-link { padding: 8px 12px; font-size: 0.98rem; }
+  .nav-link { padding: 8px 12px; font-size: 0.78rem; }
   .section-banner { height: 200px; }
   .banner-overlay h1 { font-size: 1.6rem; padding: 12px 16px; }
   .content { padding: 20px; }
