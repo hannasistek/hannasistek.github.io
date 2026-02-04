@@ -411,6 +411,14 @@ h3 { margin: 12px 0 10px; }
   height: 20px;
   filter: brightness(0) invert(1);
 }
+.podcast-badge {
+  display: inline-flex;
+  align-items: center;
+}
+.podcast-badge img {
+  height: 40px;
+  width: auto;
+}
 
 /* Video container */
 .video-container {
