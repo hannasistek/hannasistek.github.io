@@ -448,6 +448,14 @@ h3 { margin: 12px 0 10px; }
   margin: 0 0 6px;
   font-weight: 600;
 }
+.episode-title a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+.episode-title a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
 .episode-meta {
   font-size: 0.88rem;
   color: #777;
