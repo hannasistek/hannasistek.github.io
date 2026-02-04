@@ -76,7 +76,7 @@ body {
   object-position: center bottom;
 }
 .podcast-banner img {
-  height: 350px;
+  height: 450px;
   object-position: center center;
 }
 
@@ -352,7 +352,7 @@ h3 { margin: 12px 0 10px; }
   gap: 32px;
   align-items: flex-start;
   margin-bottom: 32px;
-  margin-top: -180px;
+  margin-top: -320px;
   position: relative;
   z-index: 10;
 }
