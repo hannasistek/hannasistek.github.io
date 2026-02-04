@@ -79,6 +79,12 @@ body {
   height: 450px;
   object-position: center center;
 }
+.podcast-banner-mobile {
+  display: none;
+}
+.podcast-banner-desktop {
+  display: block;
+}
 
 /* Section subheadings (smaller) */
 .content h2:not(:first-child) {
@@ -386,10 +392,19 @@ h3 { margin: 12px 0 10px; }
   margin: 0 0 20px;
   line-height: 1.7;
 }
+.podcast-info-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.podcast-text {
+  flex: 1;
+}
 .podcast-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
+  flex-shrink: 0;
 }
 .podcast-link {
   display: inline-flex;
@@ -481,6 +496,12 @@ h3 { margin: 12px 0 10px; }
 }
 
 @media (max-width: 768px) {
+  .podcast-banner-mobile {
+    display: block;
+  }
+  .podcast-banner-desktop {
+    display: none;
+  }
   .podcast-header {
     flex-direction: column;
     align-items: center;
@@ -491,7 +512,13 @@ h3 { margin: 12px 0 10px; }
     width: 160px;
     height: 160px;
   }
+  .podcast-info-layout {
+    flex-direction: column;
+    align-items: center;
+  }
   .podcast-links {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .episode-card {
