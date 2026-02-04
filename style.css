@@ -426,9 +426,14 @@ h3 { margin: 12px 0 10px; }
 }
 .video-container video {
   width: 100%;
-  max-width: 640px;
+  max-width: 480px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .video-container video {
+    max-width: 100%;
+  }
 }
 
 /* Episode cards */
