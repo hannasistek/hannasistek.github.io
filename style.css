@@ -352,7 +352,7 @@ h3 { margin: 12px 0 10px; }
   gap: 32px;
   align-items: flex-start;
   margin-bottom: 32px;
-  margin-top: -200px;
+  margin-top: -280px;
   position: relative;
   z-index: 10;
 }
@@ -380,7 +380,7 @@ h3 { margin: 12px 0 10px; }
   font-size: 1.2rem;
   font-style: italic;
   color: #555;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
 }
 .podcast-description {
   margin: 0 0 20px;
