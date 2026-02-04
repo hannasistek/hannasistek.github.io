@@ -395,7 +395,7 @@ h3 { margin: 12px 0 10px; }
 .podcast-info-layout {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .podcast-text {
   flex: 1;
@@ -405,6 +405,7 @@ h3 { margin: 12px 0 10px; }
   flex-direction: column;
   gap: 12px;
   flex-shrink: 0;
+  align-items: flex-start;
 }
 .podcast-link {
   display: inline-flex;
