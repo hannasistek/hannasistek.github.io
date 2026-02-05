@@ -358,7 +358,7 @@ h3 { margin: 12px 0 10px; }
   gap: 32px;
   align-items: flex-start;
   margin-bottom: 32px;
-  margin-top: -300px;
+  margin-top: -250px;
   position: relative;
   z-index: 10;
 }
@@ -393,16 +393,19 @@ h3 { margin: 12px 0 10px; }
   line-height: 1.7;
 }
 .podcast-info-layout {
-  display: block;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
 }
 .podcast-text {
-  margin-bottom: 20px;
+  flex: 1;
 }
 .podcast-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
-  align-items: center;
+  flex-shrink: 0;
+  align-items: flex-start;
 }
 .podcast-link {
   display: inline-flex;
